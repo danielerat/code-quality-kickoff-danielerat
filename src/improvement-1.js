@@ -6,5 +6,5 @@
 
 // FUNCTION 1
 export default function countNumberOfR(string) {
-  return string.match(/R/g).length;
+  return string ? String(string).match(/R/g)?.length || 0 : 0;
 }
